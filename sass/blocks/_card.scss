@@ -1,0 +1,39 @@
+.card {
+    width: 350px;
+}
+
+.card--big {
+    width: 540px;
+}
+
+.card-img {
+    margin-bottom: 16px;
+}
+
+.card-img--big {
+    margin-bottom: 20px;
+}
+
+.card-title {
+    margin-bottom: 6px;
+
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.3;
+}
+
+.card-title--big{
+    margin-bottom: 8px;
+
+    font-size: 30px;
+}
+
+.card-subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+.card-subtitle--big{
+    font-size: 20px;
+}
