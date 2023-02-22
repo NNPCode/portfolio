@@ -1,0 +1,22 @@
+.title-grad {
+    display: inline;
+    background-repeat: no-repeat;
+    background-position: center bottom 15px;
+    background-size: 100% 12px;
+    background-image: linear-gradient(to left , #FBDC4D);
+}
+
+.title-grad--section {
+    display: inline;
+    background-repeat: no-repeat;
+    background-position: center bottom 10px;
+    background-size: 100% 8px;
+    background-image: linear-gradient(to left , #FBDC4D);
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 1.3;
+}
+
