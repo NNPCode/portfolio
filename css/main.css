@@ -172,16 +172,6 @@ body > * {
   font-size: 0;
 }
 
-/* Sticky Footer */
-.footer {
-  margin-top: auto;
-  /* sticky footer */
-  /* Just for fun */
-  text-align: center;
-  background-color: #e2e2e2;
-  padding: 50px 0;
-}
-
 .button {
   height: 64px;
   padding-left: 40px;
@@ -262,6 +252,16 @@ body > * {
   background-size: 100% 8px;
   background-image: -webkit-gradient(linear, right top, left top, from(#FBDC4D));
   background-image: linear-gradient(to left, #FBDC4D);
+}
+
+.title-grad--center {
+  display: inline;
+  background-repeat: no-repeat;
+  background-position: center bottom 10px;
+  background-size: 100% 8px;
+  background-image: -webkit-gradient(linear, right top, left top, from(#FBDC4D));
+  background-image: linear-gradient(to left, #FBDC4D);
+  text-align: center;
 }
 
 .section-title {
@@ -445,6 +445,45 @@ body > * {
   -webkit-column-gap: 30px;
           column-gap: 30px;
   row-gap: 50px;
+}
+
+.footer {
+  margin-top: auto;
+  /* sticky footer */
+  padding-top: 70px;
+  text-align: center;
+  background: -webkit-gradient(linear, left bottom, left top, from(#F5FBFF), to(#F5FBFF)), #F4F8F9;
+  background: linear-gradient(0deg, #F5FBFF, #F5FBFF), #F4F8F9;
+}
+
+.footer-copyright {
+  margin-top: 90px;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  background-color: #333333;
+}
+
+.footer-copyright-title {
+  margin-bottom: 10px;
+  text-align: left;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #FFFFFF;
+}
+
+.footer-copyright-subtitle {
+  width: 825px;
+  text-align: left;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #B0B0B0;
+}
+
+.footer-copyright-subtitle a {
+  text-decoration: underline;
+  color: #FFFFFF;
 }
 
 /*# sourceMappingURL=main.css.map */
