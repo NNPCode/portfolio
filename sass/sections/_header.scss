@@ -39,7 +39,7 @@
 
 .header-title-wrapper{
     display: flex;
-    column-gap: 140px;
+    column-gap: 100px;
 }
 
 .header-title-description{
@@ -48,15 +48,18 @@
     width: 535px;
 }
 
-.header-heading {
+.header-heading-wrapper{
     margin-bottom: 30px;
+}
 
+.header-heading {
     font-weight: 700;
     font-size: 78px;
     line-height: 1;
 }
 
 .header-title-description p{
+    width: 540px;
     font-weight: 400;
     font-size: 22px;
     line-height: 1.6;
@@ -73,25 +76,18 @@
 }
 
 .header-title-img{
-    position: relative;
-    z-index: 2;
-    width: 515px;
-    height: 450px;
-
-    padding-right: 40px;
-    padding-bottom: 40px;
-
-    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 40px 40px rgba(255, 255, 255, 0.5);
 }
 
 .header-title-img img{
-    width: 100%;
-   height: 100%;
+    width: 475px;
+    height: 410px;
+    object-fit: cover;
 }
 
 .header-banner {
-    margin-top: -193px;
-    margin-bottom: -34px;
+    margin-top: -155px;
+    margin-bottom: -32px;
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
