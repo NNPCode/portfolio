@@ -16,16 +16,44 @@
     display: flex;
     column-gap: 100px;
 
-    font-family: 'Montserrat';
     font-weight: 600;
     font-size: 20px;
     line-height: 1.3;
 
 }
 
+.header-top-nav-link{
+    transition: .5s ease-in;
+
+    display: inline;
+    background-repeat: no-repeat;
+    background-position: center bottom 1px;
+    background-size: 0% 2px;
+    background-image: linear-gradient(to left , #FBDC4D, #FBDC4D);
+
+    &:hover{
+        background-size: 100% 2px;
+    }
+
+    &:focus{
+        background-image: linear-gradient(to left , #9d8102, #9d8102);
+    }
+}
+
 .header-top-links {
     display: flex;
     column-gap: 26px;
+   
+    a{
+        transition: 0.5s;
+        &:hover path{
+            fill: #FBDC4D;
+        }
+
+        &:focus path{
+            fill: #9d8102;
+        }
+    }
 }
 
 .header-content {
@@ -77,12 +105,15 @@
 
 .header-title-img{
     box-shadow: 40px 40px rgba(255, 255, 255, 0.5);
+    border-radius: 20%;
 }
 
 .header-title-img img{
     width: 475px;
     height: 410px;
     object-fit: cover;
+
+    border-radius: 20%;
 }
 
 .header-banner {

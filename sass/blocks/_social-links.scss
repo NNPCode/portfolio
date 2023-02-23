@@ -1,0 +1,11 @@
+.social-links {
+    display: flex;
+    column-gap: 30px;
+
+    a{
+        transition: .3s ease-in;
+        &:hover{
+            opacity: 0.6;
+        }
+    }
+}

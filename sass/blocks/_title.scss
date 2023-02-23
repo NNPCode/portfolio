@@ -3,7 +3,7 @@
     background-repeat: no-repeat;
     background-position: center bottom 15px;
     background-size: 100% 12px;
-    background-image: linear-gradient(to left , #FBDC4D);
+    background-image: linear-gradient(to left , #FBDC4D, #FBDC4D);
 }
 
 .title-grad--section {
@@ -11,21 +11,26 @@
     background-repeat: no-repeat;
     background-position: center bottom 10px;
     background-size: 100% 8px;
-    background-image: linear-gradient(to left , #FBDC4D);
+    background-image: linear-gradient(to left , #FBDC4D, #FBDC4D);
 }
 
-.title-grad--center {
+.title-grad--steps {
     display: inline;
     background-repeat: no-repeat;
-    background-position: center bottom 10px;
-    background-size: 100% 8px;
-    background-image: linear-gradient(to left , #FBDC4D);
-    text-align: center;
+    background-position: center bottom 3px;
+    background-size: 100% 6px;
+    background-image: linear-gradient(to left , #FBDC4D, #FBDC4D);
 }
 
 .section-title {
     font-weight: 700;
     font-size: 54px;
+    line-height: 1.3;
+}
+
+.steps-tree-title {
+    font-weight: 700;
+    font-size: 24px;
     line-height: 1.3;
 }
 
