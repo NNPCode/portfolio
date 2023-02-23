@@ -2,6 +2,8 @@
     padding-top: 70px; // Чтобы во время прокрутки к этому блоку на странице, блок располагался с отступом от верхнего края страницы
     margin-top: -70px; // Компенсируем верхний паддинг для правильного отображения во время прокрутки к этому блоку
     padding-bottom: 90px;
+
+    line-height: 1.3;
 }
 
 .skills-wrapper{
@@ -14,16 +16,15 @@
 
     font-weight: 700;
     font-size: 42px;
-    line-height: 1.3;
 }
 
 .skills-column-link {
+    transition: .3s ease-in;
     margin-top: 20px;
 
     color: #1A71D2;
     font-weight: 400;
     font-size: 22px;
-    line-height: 1.3;
 }
 
 .skills-description-list{
@@ -33,10 +34,12 @@
 
     font-weight: 400;
     font-size: 22px;
-    line-height: 1.3;
 }
 
-.skills-description-item::before{
-    content: "—";
-    padding-right: 3px;
+.skills-description-item{
+
+    &::before{
+        content: "—";
+        padding-right: 3px;
+    }
 }
