@@ -43,7 +43,8 @@
 .header-top-links {
     display: flex;
     column-gap: 26px;
-   
+    align-items: center;
+
     a{
         &:hover path{
             transition: 0.3s ease-in;
@@ -79,12 +80,6 @@
 
 .header-heading-wrapper{
     margin-bottom: 30px;
-}
-
-.header-heading {
-    font-weight: 700;
-    font-size: 78px;
-    line-height: 1;
 }
 
 .header-title-description {
