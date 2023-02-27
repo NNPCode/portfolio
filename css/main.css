@@ -206,22 +206,22 @@ body > * {
   }
 }
 
-.header-nav-button {
+.mobile-nav {
   display: none;
   /* Tablet Small */
 }
 @media (max-width: 899px) {
-  .header-nav-button {
+  .mobile-nav {
     display: block;
   }
 }
-.header-nav-button .header-nav-burger {
+.mobile-nav .mobile-nav-middle {
   position: relative;
   width: 40px;
   height: 5px;
   background-color: #000000;
 }
-.header-nav-button .header-nav-burger::before {
+.mobile-nav .mobile-nav-middle::before {
   content: "";
   position: absolute;
   top: -10px;
@@ -234,7 +234,7 @@ body > * {
   transition: transform .2s ease-in, top .2s linear .2s;
   transition: transform .2s ease-in, top .2s linear .2s, -webkit-transform .2s ease-in;
 }
-.header-nav-button .header-nav-burger::after {
+.mobile-nav .mobile-nav-middle::after {
   content: "";
   position: absolute;
   top: 10px;
@@ -247,10 +247,10 @@ body > * {
   transition: transform .2s ease-in, top .2s linear .2s;
   transition: transform .2s ease-in, top .2s linear .2s, -webkit-transform .2s ease-in;
 }
-.header-nav-button .header-nav-burger--active {
+.mobile-nav--active .mobile-nav-middle {
   background-color: transparent;
 }
-.header-nav-button .header-nav-burger--active::before {
+.mobile-nav--active .mobile-nav-middle::before {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   top: 0;
@@ -259,7 +259,7 @@ body > * {
   transition: top .2s linear, transform .2s ease-in .2s;
   transition: top .2s linear, transform .2s ease-in .2s, -webkit-transform .2s ease-in .2s;
 }
-.header-nav-button .header-nav-burger--active::after {
+.mobile-nav--active .mobile-nav-middle::after {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   top: 0;

@@ -36,7 +36,7 @@
     }
 }
 
-.header-nav-button{
+.mobile-nav{
     display: none;
 
     /* Tablet Small */
@@ -44,7 +44,7 @@
        display: block;
     }
 
-    .header-nav-burger{
+    .mobile-nav-middle{
         position: relative;
         width: 40px;
         height: 5px;
@@ -74,10 +74,11 @@
 
             transition: transform .2s ease-in, top .2s linear .2s;
         }
+    }
 
-        &--active{
-        
-            background-color: transparent;
+    &--active{
+        .mobile-nav-middle{
+        background-color: transparent;
 
             &::before{
                 transform: rotate(45deg);
