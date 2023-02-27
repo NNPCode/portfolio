@@ -60,6 +60,23 @@
     background-position: center bottom 15px;
     background-size: 100% 12px;
     background-image: linear-gradient(to left , #FBDC4D, #FBDC4D);
+
+   /* Tablet Big*/
+   @media (max-width: 1139px) {
+      background-size: 100% 10px;
+      background-position: center bottom 10px;
+   }
+
+   /* Tablet Small */
+   @media (max-width: 899px) {
+      background-size: 100% 8px;
+      background-position: center bottom 5px;
+   }
+
+   /* Mobile */
+   @media (max-width: 767px) {
+      background-position: center bottom 3px;
+   }
 }
 
 .title-grad--section {
@@ -68,6 +85,16 @@
     background-position: center bottom 10px;
     background-size: 100% 8px;
     background-image: linear-gradient(to left , #FBDC4D, #FBDC4D);
+
+    /* Tablet Big*/
+    @media (max-width: 1139px) {
+      background-position: center bottom 5px;
+    }
+
+    /* Tablet Small */
+    @media (max-width: 899px) {
+      background-position: center bottom 3px;
+    }
 }
 
 .title-grad--steps {
@@ -76,5 +103,10 @@
     background-position: center bottom 3px;
     background-size: 100% 6px;
     background-image: linear-gradient(to left , #FBDC4D, #FBDC4D);
+
+    /* Tablet Big*/
+    @media (max-width: 1139px) {
+      background-position: center bottom 1px;
+    }
 }
 
