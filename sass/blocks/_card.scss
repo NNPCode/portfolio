@@ -2,12 +2,55 @@
     width: 350px;
     transition: .3s ease-in;
 
-    line-height: 1.3;
-
     &:hover{
-        opacity: 0.7;
-        transform: translateY(-3px);
+        transform: translateY(-3px);       
+
+        .card-description-title{
+            color: #FF543E;
+        }
+
+        .card-img{
+
+            span{
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+                background-color: #EF6857;
+                color: #FFFFFF;
+                opacity: 1;
+            }
+
+            &::before{
+                width: unset;
+                height: unset;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                
+                background-color:rgba(255, 221, 85, 0.75);
+            }
+        }
     }
+
+    /* Tablet Big*/
+    @media (max-width: 1139px) {
+       width: 270px;
+    }
+
+    /* Tablet Small */
+    @media (max-width: 899px) {
+       width: 226px;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+       width: 290px;
+    }
+
+    
 }
 
 .card--big {
@@ -17,22 +60,81 @@
         width: 540px;
         height: 370px;
         margin-bottom: 20px;
+
+        /* Tablet Big*/
+        @media (max-width: 1139px) {
+           width: 420px;
+           height: 288px;
+        }
+
+        /* Tablet Small */
+        @media (max-width: 899px) {
+           width: 354px;
+           height: 180px;
+           margin-bottom: 10px;
+        }
+
+        /* Mobile */
+        @media (max-width: 767px) {
+           width: 290px;
+           height: 180px;
+        }
     }
 
     .card-description{
-        .card-description-title{
+    
+        .card-description-title{    
             margin-bottom: 8px;
             font-size: 30px;
+
+            /* Tablet Big*/
+            @media (max-width: 1139px) {
+               font-size: 24px;
+               margin-bottom: 6px;
+            }
+
+            /* Tablet Small */
+            @media (max-width: 899px) {
+               font-size: 18px;
+               margin-bottom: 4px;
+            }
         }
 
         .card-description-subtitle{
             font-size: 20px;
+
+            /* Tablet Big*/
+            @media (max-width: 1139px) {
+               font-size: 16px;
+            }
+
+            /* Tablet Small */
+            @media (max-width: 899px) {
+               font-size: 14px;
+            }
         }
+    }
+
+    /* Tablet Big*/
+    @media (max-width: 1139px) {
+       width: 420px;
+    }
+
+    /* Tablet Small */
+    @media (max-width: 899px) {
+       width: 354px;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+       width: 290px;
     }
 }
 
 .card-img {
+    position: relative;
     margin-bottom: 16px;
+    overflow: hidden;
 
     width: 350px;
     height: 220px;
@@ -41,17 +143,82 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }   
+    
+    &::before{
+        position: absolute;
+        content: "";
+        width: 0%;
+        height: 0%;
+        top: 50%;
+        left: 50%;
+        transition: 0.5s ease-in;
+    }
+
+    span{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        transition: .5s ease-in;
+
+        width: 208px;
+        height: 51px;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        border-radius: 80px;
+
+        font-weight: 700;
+        line-height: 51px;
+        font-size: 18px;
+        color: #FFFFFF;
+
+        opacity: 0;
+    }
+
+    /* Tablet Big*/
+    @media (max-width: 1139px) {
+       width: 270px;
+       height: 169px;
+       margin-bottom: 10px;
+    }
+
+    /* Tablet Small */
+    @media (max-width: 899px) {
+       width: 226px;
+       height: 140px;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+       width: 290px;
+       height: 180px;
     }
 }
 
 .card-description-title {
+    transition: .3s ease-in;
+
     margin-bottom: 6px;
 
     font-weight: 600;
     font-size: 24px;   
+
+    /* Tablet Big*/
+    @media (max-width: 1139px) {
+       font-size: 18px;
+       margin-bottom: 4px;
+    }
 }
 
 .card-description-subtitle {
     font-weight: 400;
     font-size: 18px;
+
+    /* Tablet Big*/
+    @media (max-width: 1139px) {
+       font-size: 14px;
+    }
 }

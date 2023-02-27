@@ -13,24 +13,35 @@
 
     transition: .5s ease-in;
 
-    span{
-        transition: .5s ease-in;
-        display: inline;
-        background-repeat: no-repeat;
-        background-position: center bottom 1px;
-        background-size: 0% 1px;
-        background-image: linear-gradient(to left , #000000, #000000);  
-
-        
+    &:hover{
+        background: #FFEB8D;
     }
 
-    &:hover{
-        opacity: 0.8;
+    &:active{
+        background: #F5D22D;
+    }
 
-        span{
-            opacity: 0.6;
-            background-size: 100% 1px;
-        }
+    /* Tablet Big */
+    @media (max-width: 1139px) {
+       height: 58px;
+       line-height: 58px;
+
+       padding-left: 26px;
+       padding-right: 26px;
+    }
+
+    /* Tablet Small */
+    @media (max-width: 899px) {
+       display: none;
+    }
+}
+
+.header-nav-button{
+    display: none;
+
+    /* Tablet Small */
+    @media (max-width: 899px) {
+       display: block;
     }
 }
 
@@ -38,11 +49,10 @@
     background: #EFF7FC;
 
     &:hover {
-        opacity: 0.8;
-        
-        span{
-            opacity: 0.6;
-            background-size: 100% 1px;
-        }
+        background: #D1EDFF;
+    }
+
+    &:active{
+        background: #B0DCF8;
     }
 }
