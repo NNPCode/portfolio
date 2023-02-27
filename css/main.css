@@ -650,6 +650,7 @@ body > * {
   background-image: linear-gradient(to left, #FBDC4D, #FBDC4D);
 }
 .header-top-nav-link:hover {
+  color: #FF543E;
   background-size: 100% 2px;
 }
 .header-top-nav-link:focus {
@@ -685,14 +686,6 @@ body > * {
   -webkit-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
   fill: #9d8102;
-}
-.header-top-links a svg {
-  /* Tablet Big*/
-}
-@media (max-width: 1139px) {
-  .header-top-links a svg {
-    max-width: unset;
-  }
 }
 @media (max-width: 1139px) {
   .header-top-links a {
@@ -766,7 +759,6 @@ body > * {
   /* Mobile */
 }
 .header-title-description p {
-  width: 540px;
   font-weight: 400;
   font-size: 22px;
   line-height: 1.6;
@@ -777,14 +769,12 @@ body > * {
 }
 @media (max-width: 1139px) {
   .header-title-description p {
-    width: 420px;
     font-size: 18px;
     margin-bottom: 28px;
   }
 }
 @media (max-width: 899px) {
   .header-title-description p {
-    width: 354px;
     font-size: 16px;
     margin-bottom: 0;
   }

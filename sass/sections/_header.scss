@@ -49,6 +49,7 @@
     background-image: linear-gradient(to left , #FBDC4D, #FBDC4D);
 
     &:hover{
+        color: #FF543E;
         background-size: 100% 2px;
     }
 
@@ -77,13 +78,6 @@
         &:focus path, &:active path{
             transition: 0.3s ease-in;
             fill: #9d8102;
-        }
-
-        svg {
-            /* Tablet Big*/
-            @media (max-width: 1139px) {
-               max-width: unset;
-            }
         }
 
         /* Tablet Big*/
@@ -144,7 +138,6 @@
     width: 535px;
 
     p {
-        width: 540px;
         font-weight: 400;
         font-size: 22px;
         line-height: 1.6;
@@ -153,14 +146,12 @@
 
         /* Tablet Big */
         @media (max-width: 1139px) {
-            width: 420px;
             font-size: 18px;
             margin-bottom: 28px;
         }
 
         /* Tablet Small */
         @media (max-width: 899px) {
-            width: 354px;
             font-size: 16px;
             margin-bottom: 0;
         }
