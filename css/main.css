@@ -114,12 +114,17 @@ body {
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  position: relative;
 }
 
 body > * {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   /* sticky footer */
+}
+
+body.noscroll {
+  overflow: hidden;
 }
 
 /* Grid styles */
@@ -206,8 +211,20 @@ body > * {
   }
 }
 
+.button--gray {
+  background: #EFF7FC;
+}
+.button--gray:hover {
+  background: #D1EDFF;
+}
+.button--gray:active {
+  background: #B0DCF8;
+}
+
+/* Mobile menu */
 .mobile-nav {
   display: none;
+  z-index: 5;
   /* Tablet Small */
 }
 @media (max-width: 899px) {
@@ -267,16 +284,6 @@ body > * {
   transition: top .2s linear, -webkit-transform .2s ease-in .2s;
   transition: top .2s linear, transform .2s ease-in .2s;
   transition: top .2s linear, transform .2s ease-in .2s, -webkit-transform .2s ease-in .2s;
-}
-
-.button--gray {
-  background: #EFF7FC;
-}
-.button--gray:hover {
-  background: #D1EDFF;
-}
-.button--gray:active {
-  background: #B0DCF8;
 }
 
 .social-links {
@@ -688,6 +695,17 @@ body > * {
   margin-bottom: -15px;
   z-index: 10;
   background-color: rgba(255, 255, 255, 0.7);
+  /* Tablet Small */
+}
+.header-top .container {
+  width: 100%;
+  max-width: 1140px;
+}
+@media (max-width: 899px) {
+  .header-top {
+    padding-top: 30px;
+    top: 0;
+  }
 }
 
 .header-top-row {
@@ -987,11 +1005,29 @@ body > * {
   }
 }
 
+/* Mobile menu*/
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(37, 73, 116, 0.8);
+  z-index: 3;
+  opacity: 0;
+  -webkit-transition: .7s ease-in;
+  transition: .7s ease-in;
+}
+.overlay--active {
+  opacity: 1;
+}
+
 .header-mobile-text {
   display: none;
   font-weight: 700;
   font-size: 20px;
   line-height: 1;
+  z-index: 1;
   /* Tablet Small */
 }
 @media (max-width: 899px) {
@@ -1012,6 +1048,46 @@ body > * {
     display: block;
     margin-top: 10px;
   }
+}
+
+.mobile-menu {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  max-width: 320px;
+  background-color: #FFFFFF;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  padding-left: 15px;
+  opacity: 0;
+  -webkit-transition: .7s ease-in;
+  transition: .7s ease-in;
+}
+.mobile-menu--list {
+  font-weight: 600;
+  font-size: 18px;
+}
+.mobile-menu--list li:not(:last-child) {
+  margin-bottom: 28px;
+}
+.mobile-menu--contacts .social-links {
+  margin-bottom: 20px;
+}
+.mobile-menu--active {
+  opacity: 1;
 }
 
 .skills {

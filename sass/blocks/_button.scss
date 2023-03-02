@@ -36,8 +36,24 @@
     }
 }
 
+.button--gray {
+    background: #EFF7FC;
+
+    &:hover {
+        background: #D1EDFF;
+    }
+
+    &:active{
+        background: #B0DCF8;
+    }
+}
+
+/* Mobile menu */
+
 .mobile-nav{
     display: none;
+
+    z-index: 5;
 
     /* Tablet Small */
     @media (max-width: 899px) {
@@ -76,6 +92,8 @@
         }
     }
 
+
+    // Активное состояние мобильной навигации
     &--active{
         .mobile-nav-middle{
         background-color: transparent;
@@ -94,19 +112,5 @@
                 transition: top .2s linear, transform .2s ease-in .2s;
             }
         }
-    }
-}
-
-
-
-.button--gray {
-    background: #EFF7FC;
-
-    &:hover {
-        background: #D1EDFF;
-    }
-
-    &:active{
-        background: #B0DCF8;
     }
 }
