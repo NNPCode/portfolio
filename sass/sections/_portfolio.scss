@@ -17,7 +17,7 @@
     }
 }
 
-.portfolio-row {  
+.portfolio-cards {  
     margin-top: 65px;  
     display: flex;
     flex-wrap: wrap;
@@ -53,7 +53,7 @@
     column-gap: 70px;
     row-gap: 20px;
 
-    .slider-link{
+    .slider-button{
         transition: .3s ease-in;
         font-weight: 700;
         font-size: 24px;
@@ -73,15 +73,6 @@
            font-size: 12px;
         }
     }
-
-    .slider-link--active {
-            color: #000000; 
-
-            &:hover, &:active, &:focus{
-                color: #000000;
-             }
-        }
-
         /* Mobile */
         @media (max-width: 767px) {
            column-gap: 20px;

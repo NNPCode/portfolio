@@ -1,4 +1,4 @@
-
+$(document).ready(function(){
 
     const toggleMenu = document.querySelector('.mobile-nav');
     const mobileMenu = document.querySelector('.mobile-menu');
@@ -28,6 +28,16 @@
         overlay.classList.remove('overlay--active');
         bodyE1.classList.remove('noscroll');
     })
+
+    let containerE1 = document.querySelector('#mix-cards');
+
+    let mixer = mixitup(containerE1, {
+        classNames: {
+            block: ""
+        }
+    });
+
+})    
 
 
 // document.querySelector('.mobile-nav').addEventListener('click', function(){
