@@ -29,12 +29,23 @@ $(document).ready(function(){
         bodyE1.classList.remove('noscroll');
     })
 
+    // Mixitup
     let containerE1 = document.querySelector('#mix-cards');
 
     let mixer = mixitup(containerE1, {
         classNames: {
             block: ""
         }
+    });
+
+    // PageNav
+    $('#header-top-nav').onePageNav({
+        currentClass: 'active',
+        changeHash: false,
+        scrollSpeed: 750,
+        scrollThreshold: 0.8,
+        filter: '',
+        easing: 'swing',
     });
 
 })    

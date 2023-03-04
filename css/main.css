@@ -734,8 +734,12 @@ body.noscroll {
           column-gap: 100px;
   font-weight: 600;
   font-size: 20px;
+  /* PageNave */
   /* Tablet Big */
   /* Tablet Small */
+}
+.header-top-nav-list li.active a {
+  color: #FF543E;
 }
 @media (max-width: 1139px) {
   .header-top-nav-list {

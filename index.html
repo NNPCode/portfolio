@@ -40,11 +40,11 @@
 				<div class="header-top-row">
 					<span class="header-mobile-text">HTML Верстальщик</span>
 					<nav class="header-top-nav">
-						<ul class="header-top-nav-list">
-							<li class="header-top-nav-item"><a class="header-top-nav-link" href="#skills">Навыки</a></li>
-							<li class="header-top-nav-item"><a class="header-top-nav-link" href="#portfolio">Портфолио</a></li>
-							<li class="header-top-nav-item"><a class="header-top-nav-link" href="#steps">Как я работаю</a></li>
-							<li class="header-top-nav-item"><a class="header-top-nav-link" href="#contacts">Контакты</a></li>
+						<ul class="header-top-nav-list" id="header-top-nav">
+							<li><a class="header-top-nav-link" href="#skills" data-aos="zoom-in">Навыки</a></li>
+							<li><a class="header-top-nav-link" href="#portfolio" data-aos="zoom-in">Портфолио</a></li>
+							<li><a class="header-top-nav-link" href="#steps" data-aos="zoom-in">Как я работаю</a></li>
+							<li><a class="header-top-nav-link" href="#contacts" data-aos="zoom-in">Контакты</a></li>
 						</ul>
 						<button class="mobile-nav">
 							<div class="mobile-nav-middle"></div>
@@ -178,7 +178,7 @@
 								<a href="#skills" class="button">Познакомиться</a>
 								<a href="#contacts" class="button button--gray">Контакты</a>
 							</div>
-							<div class="header-title-img">
+							<div class="header-title-img" data-aos="zoom-in" data-aos-delay="1000">
 									<img src="./img/header/header-img.JPG" alt="Николай Панцырев">
 							</div>
 							<div class="header-mobile-description">
@@ -289,7 +289,7 @@
 			</section>
 			<section class="portfolio" id="portfolio">
 				<div class="container">
-						<h2 class="section-title title-grad--section">Портфолио</h2>
+						<h2 class="section-title title-grad--section" data-aos="zoom-in">Портфолио</h2>
 
 					<div class="portfolio--wrapper">
 						<!-- Slider portfolio-->  
@@ -438,10 +438,20 @@
 			</div>
 		</footer>
 		<!-- Jquery -->
-		<script src="./libs/jquery/jquery-3.0.0.min.js"></script>
+		<script src="./libs/jquery/jquery-3.6.3.min.js"></script>
+
+		<!-- PageNav -->
+		<script src="./libs/pageNav/nav.js"></script>
 
 		<!-- Mixitup -->
 		<script src="./libs/mixitup/mixitup.min.js"></script>
+
+		<!-- AOS -->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<!-- INITIALIZE AOS -->
+		<script>
+			AOS.init();
+		</script>
 
 		<!-- Custom script -->
 		<script src="./js/main.js"></script>
