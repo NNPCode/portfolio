@@ -259,6 +259,11 @@
     @media (max-width: 1139px) {
        box-shadow: unset;
     }
+
+    /* Tablet Small */
+    @media (max-width: 899px) {
+       border-radius: 10%;
+    }
 }
 
 .header-banner {

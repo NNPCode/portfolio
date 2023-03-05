@@ -955,6 +955,7 @@ body.noscroll {
           box-shadow: 40px 40px rgba(255, 255, 255, 0.5);
   border-radius: 20%;
   /* Tablet Big */
+  /* Tablet Small */
 }
 .header-title-img img {
   width: 475px;
@@ -981,6 +982,11 @@ body.noscroll {
   .header-title-img {
     -webkit-box-shadow: unset;
             box-shadow: unset;
+  }
+}
+@media (max-width: 899px) {
+  .header-title-img {
+    border-radius: 10%;
   }
 }
 
