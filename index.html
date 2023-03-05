@@ -408,26 +408,41 @@
 				<h2 class="section-title title-grad--section">Контакты</h2>
 				<div class="footer-wrapper">
 					<div class="footer-contacts">
+						<div class="footer-description">
+							Если вы ищите специалиста по верстке сайтов или frontend разработчика в команду для работы над проектом —  напишите мне.
+						</div>
 						<ul class="footer-contacts-list">
 							<li class="footer-contaсts-list-item"><span>Email</span><a href="mailto:kolya680@mail.ru" class="links">kolya680@mail.ru</a></li>
 							<li class="footer-contaсts-list-item"><span>Телефон</span><a href="tel:+79154827403" class="links">+7 (915) 482-74-03</a></li>
 						</ul>
+						<div class="social-links">
+							<a href="https://t.me/la_co_t"><img src="./img/social/telegram.svg" alt="Telegram"></a>
+							<a href="https://vk.com/id21323072"><img src="./img/social/vk.svg" alt="VK"></a>
+							<a href="#"><img src="./img/social/facebook.svg" alt="Facebook"></a>
+							<a href="#"><img src="./img/social/instagram.svg" alt="Instagram"></a>
+							<a href="https://wa.me/+79154827403"><img src="./img/social/whatsapp.svg" alt="Whatsapp"></a>
+						</div>
 					</div>
-					<div class="footer-description">
-						Если вы ищите специалиста по верстке сайтов или frontend разработчика в команду для работы над проектом —  напишите мне.
+					<div class="wrapper">
+						<form class="contact-form">
+							<div class="form-item">
+								<span class="form-placeholder">Ваш E-mail</span>
+								<input class= "form-field" type="email" name="email">
+							</div>
+							<div class="form-item">
+								<span class="form-placeholder">Сообщение</span>
+								<textarea class= "form-field" name="message" cols="30" rows="8"></textarea>
+							</div>
+							<div class="form-item">
+								<input class="form-button" type="submit" value="Отправить">
+							</div>
+						</form>
+						<div id="answer"></div>
 					</div>
 					<div class="footer-icon">
 						<img src="./img/footer/contacts-icon.svg" alt="Иконка контакты">
 					</div>
 				</div>
-				<div class="social-links">
-					<a href="https://t.me/la_co_t"><img src="./img/social/telegram.svg" alt="Telegram"></a>
-					<a href="https://vk.com/id21323072"><img src="./img/social/vk.svg" alt="VK"></a>
-					<a href="#"><img src="./img/social/facebook.svg" alt="Facebook"></a>
-					<a href="#"><img src="./img/social/instagram.svg" alt="Instagram"></a>
-					<a href="https://wa.me/+79154827403"><img src="./img/social/whatsapp.svg" alt="Whatsapp"></a>
-				</div>
-
 			</div>
 
 			<div class="footer-copyright">
@@ -439,6 +454,7 @@
 		</footer>
 		<!-- Jquery -->
 		<script src="./libs/jquery/jquery-3.6.3.min.js"></script>
+		<script src="./libs/jquery/validate/jquery.validate.min.js"></script>
 
 		<!-- PageNav -->
 		<script src="./libs/pageNav/nav.js"></script>

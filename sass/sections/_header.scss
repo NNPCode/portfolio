@@ -354,8 +354,10 @@
     padding-top: 30px;
     padding-bottom: 40px;
     padding-left: 15px;
-    opacity: 0;
     transition: .7s ease-in;
+    // display: none;
+    opacity: 0;
+    
 
 
     &--list{
@@ -375,6 +377,7 @@
     
     &--active{
         opacity: 1;
+        // display: flex;
     }
 }
 
