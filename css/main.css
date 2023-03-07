@@ -338,8 +338,6 @@ body.noscroll {
 
 .card {
   width: 350px;
-  -webkit-transition: .3s ease-in;
-  transition: .3s ease-in;
   /* Tablet Big*/
   /* Tablet Small */
   /* Mobile */
@@ -711,6 +709,9 @@ body.noscroll {
     top: 0;
   }
 }
+.header-top--active {
+  background-color: rgba(37, 73, 116, 0);
+}
 
 .header-top-row {
   display: -webkit-box;
@@ -734,8 +735,6 @@ body.noscroll {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 100px;
-          column-gap: 100px;
   font-weight: 600;
   font-size: 20px;
   /* PageNave */
@@ -745,11 +744,21 @@ body.noscroll {
 .header-top-nav-list li.active a {
   color: #FF543E;
 }
+.header-top-nav-list li:first-child {
+  font-size: 0;
+}
+.header-top-nav-list li:not(:first-child) {
+  margin-right: 100px;
+  /* Tablet Big*/
+}
+@media (max-width: 1139px) {
+  .header-top-nav-list li:not(:first-child) {
+    margin-right: 50px;
+  }
+}
 @media (max-width: 1139px) {
   .header-top-nav-list {
     font-size: 18px;
-    -webkit-column-gap: 50px;
-            column-gap: 50px;
   }
 }
 @media (max-width: 899px) {
@@ -1090,7 +1099,7 @@ body.noscroll {
   padding-left: 15px;
   -webkit-transition: .7s ease-in;
   transition: .7s ease-in;
-  opacity: 0;
+  display: none;
 }
 .mobile-menu--list {
   font-weight: 600;
@@ -1103,7 +1112,9 @@ body.noscroll {
   margin-bottom: 20px;
 }
 .mobile-menu--active {
-  opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .skills {
@@ -1768,11 +1779,7 @@ body.noscroll {
   text-align: left;
 }
 .form-item:first-child {
-  padding-bottom: 11px;
-  margin-bottom: 50px;
-}
-.form-item:not(:last-child) {
-  border-bottom: 2px solid #E5E5E5;
+  margin-bottom: 42px;
 }
 .form-item .form-button {
   height: 64px;
@@ -1799,6 +1806,15 @@ body.noscroll {
     line-height: 58px;
   }
 }
+.form-item .form-field {
+  width: 100%;
+  height: 39px;
+  border-bottom: 2px solid #E5E5E5;
+}
+.form-item textarea.form-field {
+  resize: none;
+  height: 162px;
+}
 .form-item .error {
   font-weight: 700;
   font-size: 14px;
@@ -1810,7 +1826,6 @@ body.noscroll {
   pointer-events: none;
   top: -4px;
   left: 0;
-  padding-bottom: 15px;
   font-weight: 400;
   font-size: 22px;
   line-height: 1;
@@ -1827,10 +1842,6 @@ body.noscroll {
   .form-placeholder {
     font-size: 18px;
   }
-}
-
-.form-field {
-  width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */
