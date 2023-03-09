@@ -1,9 +1,9 @@
 $(document).ready(function(){
 
+    // Mobile menu
     const toggleMenu = document.querySelector('.mobile-nav');
     const mobileMenu = document.querySelector('.mobile-menu');
     const overlay = document.querySelector('.overlay');
-    const headerTop = document.querySelector('.header-top');
     const bodyE1 = document.body
 
     toggleMenu.addEventListener('click', function(){
@@ -11,7 +11,6 @@ $(document).ready(function(){
         this.classList.toggle('mobile-nav--active');
         mobileMenu.classList.toggle('mobile-menu--active');
         overlay.classList.toggle('overlay--active');
-        headerTop.classList.toggle('header-top--active');
         bodyE1.classList.toggle('noscroll');
     })
 
@@ -20,7 +19,6 @@ $(document).ready(function(){
         this.classList.remove('mobile-menu--active');
         toggleMenu.classList.remove('mobile-nav--active');
         overlay.classList.remove('overlay--active');
-        headerTop.classList.remove('header-top--active');
         bodyE1.classList.remove('noscroll');
     })
 
@@ -29,7 +27,6 @@ $(document).ready(function(){
         toggleMenu.classList.remove('mobile-nav--active');
         mobileMenu.classList.remove('mobile-menu--active');
         overlay.classList.remove('overlay--active');
-        headerTop.classList.remove('header-top--active');
         bodyE1.classList.remove('noscroll');
     })
 

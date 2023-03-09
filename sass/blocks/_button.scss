@@ -58,6 +58,9 @@
     /* Tablet Small */
     @media (max-width: 899px) {
        display: block;
+       position: fixed;
+       top: 38px;
+       right: 15px;
     }
 
     .mobile-nav-middle{

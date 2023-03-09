@@ -59,10 +59,10 @@
         font-size: 24px;
         color: #9EC2D0;
 
-        &:hover, &:active, &:focus{
-           color: #FF543E;
+        &.control-active{
+         color: #FF543E;
         }
-
+        
         /* Tablet Small */
         @media (max-width: 899px) {
            font-size: 18px;

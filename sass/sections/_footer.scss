@@ -130,13 +130,13 @@
 
 .footer-icon{
     position: absolute;
-    bottom: 314px;
-    right: -110px;
+    bottom: 0;
+    right: 0;
+    transform: translate(35%, -25%);
 
     /* Tablet Big*/
     @media (max-width: 1139px) {
-       bottom: 274px;
-       right: -110px;
+       transform: translate(0,-5%);
     }
 
     /* Tablet Small */

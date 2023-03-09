@@ -1,10 +1,8 @@
 .card {
     width: 350px;
 
-    &:hover{
-        transform: translateY(-3px);       
-
-        .card-description-title{
+    &:hover{      
+        .card-description-title, .card-description-subtitle{
             color: #FF543E;
         }
 
@@ -214,6 +212,8 @@
 }
 
 .card-description-subtitle {
+    transition: .3s ease-in;
+
     font-weight: 400;
     font-size: 18px;
 
